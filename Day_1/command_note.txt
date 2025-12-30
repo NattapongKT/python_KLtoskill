@@ -1,0 +1,94 @@
+1).Virtual Environment(venv)
+}
+    สร้าง Virtual Environment(venv)
+    {
+        Windows
+            python -m venv env
+        macOS/Linux
+            python3 -m venv env
+    }
+    เปิดเข้า Virtual Environment(venv)
+    {
+        Windows
+            env\Scripts\activate
+        macOS/Linux
+            source env/bin/activate
+    }
+    ปิดออกจาก Virtual Environment(venv)
+    {
+        Windows_&_macOS/Linux
+            deactivate
+    }
+    ลบ Virtual Environment(venv)
+    {
+        Windows_&_macOS/Linux?
+            rm -r venv
+    }
+}
+
+2).ใช้ pip ติดตั้ง library ที่โปรเจกต์ต้องใช้
+{
+    example
+        pip install fastapi uvicorn psycopg2-binary
+    data /ML
+        pip install numpy pandas matplotlib scikit-learn
+}
+
+3).รัน Python / รันไฟล์ / รันเซิร์ฟเวอร์
+เมื่อ venv ถูก activate แล้ว
+{
+    รัน python ปกติ
+        python
+    หรือ
+        python main.py
+
+    ตัวอย่าง FastAPI
+        uvicorn main:app --reload
+}
+
+4).ตรวจสอบว่าใช้ interpreter ของ venv จริง
+{
+    Windows
+        where python
+            ควรชี้ไปที่ project/venv/Scripts/python.exe
+
+    macOS/Linux
+        hich python
+            ควรชี้ไปที่ project/venv/Scripts/python.exe
+}
+
+วิธีบันทึก dependency ของโปรเจกต์ เมื่อเริ่มติดตั้ง lib ไปเรื่อย ๆ
+{
+    Windows_&_macOS/Linux?
+        pip freeze > requirements.txt
+    คนอื่น หรือคุณในอนาคต แค่สั่ง
+        pip install -r requirements.txt
+}
+
+เมื่อใช้ python ร่วมกับ VS Code (แนะนำมาก)
+{
+    ถ้าใช้ VS Code:
+        กด Ctrl + Shift + P
+        เลือก Python: Select Interpreter
+        เลือก Python ที่อยู่ใน venv
+        ✔️ autocomplete ถูก
+        ✔️ run/debug ไม่ error
+        ✔️ import ไม่แดงมั่ว
+}
+
+รูปแบบการใช้จริง (Workflow มาตรฐาน)
+{
+    เปิดโปรเจกต์
+    ↓
+    activate venv
+    ↓
+    pip install …
+    ↓
+    เขียนโค้ด
+    ↓
+    python / uvicorn / pytest
+    ↓
+    pip freeze > requirements.txt
+    ↓
+    deactivate
+}
