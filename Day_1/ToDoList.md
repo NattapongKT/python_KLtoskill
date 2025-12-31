@@ -1,3 +1,4 @@
+Day 1: Setup + Syntax
 Learn
 -python
 -vevu
