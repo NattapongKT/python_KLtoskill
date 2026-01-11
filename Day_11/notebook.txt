@@ -1,0 +1,7 @@
+สรุปความแตกต่างสำหรับการจดบันทึก
+
+Feature                 Stack                       Queue
+Concept                 LIFO (เข้าหลัง ออกก่อน)        FIFO (เข้าก่อน ออกก่อน)
+Method (Python)         append() / pop()            append() / popleft()
+ตัวอย่างจริง                กองจาน, ปุ่ม Undo            แถวซื้อตั๋ว, คิว Print งาน
+ความเร็ว (Big-O)          Push: $O(1)$, Pop: $O(1)$   Enq: $O(1)$, Deq: $O(1)$
