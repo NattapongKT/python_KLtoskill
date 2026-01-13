@@ -1,0 +1,21 @@
+#-------------------------------------Big-O Concept--------------------------------------------------
+"""Big-O Notation คือการวัด "ความเร็ว" (Time) และ "การใช้หน่วยความจำ" (Space)ของ Algorithm 
+เมื่อปริมาณข้อมูล (n) เพิ่มมากขึ้น โดยเราจะดูที่กรณีที่แย่ที่สุด (Worst Case) เสมอ"""
+
+1. O(1) - Constant Time (เร็วที่สุด)ไม่ว่าข้อมูลจะเยอะแค่ไหน ก็ใช้เวลาเท่าเดิมdef constant_example(arr):return arr[0] # เข้าถึง index ตรงๆ
+2. O(log n) - Logarithmic Time (เร็วมาก)ข้อมูลเพิ่มเป็นเท่าตัว แต่เวลาเพิ่มขึ้นแค่นิดเดียวตัวอย่าง: Binary Search (แบ่งครึ่งข้อมูลไปเรื่อยๆ)
+3. O(n) - Linear Time (มาตรฐาน)เวลาเพิ่มขึ้นตามจำนวนข้อมูลเป๊ะๆdef linear_example(arr):for x in arr: # วน Loop รอบเดียวprint(x)
+4. O(n log n) - Linearithmic Timeตัวอย่าง: Merge Sort, Quick Sort (Sorting ที่มีประสิทธิภาพสูง)
+5. O(n^2) - Quadratic Time (เริ่มช้า)มักเกิดจาก Loop ซ้อนกัน 2 ชั้นdef quadratic_example(arr):for i in arr:for j in arr: # Loop ใน Loopprint(i, j)
+6. O(2^n) - Exponential Time (ช้ามาก ไม่ควรใช้)ตัวอย่าง: Recursion ของ Fibonacci แบบไม่ได้จดจำค่า (Naive)
+#---------------------------------------------------------------------------------------
+
+✍️ Workshop: ลองวิเคราะห์ด้วยมือโจทย์: ฟังก์ชันนี้มี Big-O เป็นเท่าไหร่?Pythondef my_function(arr):
+    for x in arr:         # (1)
+        print(x)
+    
+    for i in arr:         # (2)
+        for j in arr:     # (3)
+            print(i, j)
+            
+เฉลย: ตัวนี้จะเป็น $O(n + n^2)$ แต่ในทาง Big-O เราจะตัดตัวที่เล็กกว่าออก เหลือเพียง $O(n^2)$ เพราะเมื่อ $n$ มีค่ามหาศาล $n^2$ จะมีผลต่อเวลามากที่สุดครับ

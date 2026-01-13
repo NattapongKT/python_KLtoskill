@@ -1,0 +1,16 @@
+# My Algorithm Learning Journey (Day 10-13)
+
+### 📊 Algorithm Analysis Summary
+
+| Algorithm | Big-O (Time) | Space Complexity | Notes |
+| :--- | :--- | :--- | :--- |
+| **Linear Search** | $O(n)$ | $O(1)$ | วนหาทีละตัวจนเจอ |
+| **Binary Search** | $O(\log n)$ | $O(1)$ | ต้องเรียงข้อมูลก่อนค้นหา |
+| **Bubble Sort** | $O(n^2)$ | $O(1)$ | เปรียบเทียบตัวติดกัน ช้าแต่เขียนง่าย |
+| **Merge Sort** | $O(n \log n)$ | $O(n)$ | แบ่งครึ่งแล้วรวมกัน เร็วและเสถียร |
+| **Factorial (Recur)**| $O(n)$ | $O(n)$ | ใช้ Call Stack ตามจำนวน n |
+
+### 💡 What I've Learned
+- **Optimization:** การเลือก Algorithm ที่ถูกต้องช่วยลดเวลาจาก 3 ชม. เหลือไม่ถึง 1 วินาที (กรณี $O(n^2)$ vs $O(n \log n)$ บนข้อมูลขนาดใหญ่)
+- **Trade-offs:** บางครั้งเรายอมเสีย Memory (Space) เพื่อให้โปรแกรมทำงานเร็วขึ้น (Time) เช่นใน Merge Sort
+- **Code Clarity:** Recursion ทำให้โค้ดสวยงาม แต่ต้องระวังเรื่อง Stack Overflow
