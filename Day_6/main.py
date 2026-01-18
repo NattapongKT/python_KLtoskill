@@ -45,6 +45,17 @@ with open("demofile.txt") as f:
   print("------------------6--------------------")
   print(f.read())
 
+#-----------------------------------------------------------
+with open("demofile.json", "w") as f:
+  f.write("{\"name\": \"John\",\"age\": 30,\"city\": \"New York\"}")
+
+#open and read the file after the overwriting:
+with open("demofile.json") as f:
+  print("------------------6--------------------")
+  print(f.read())
 
 #"x" - Create - will create a file, returns an error if the file exists
-f = open("myfile.txt", "x")
+try:
+  f = open("myfile.txt", "x")
+except:
+  print("error file exists: 'myfile.txt'")
