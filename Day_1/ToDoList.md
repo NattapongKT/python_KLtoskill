@@ -1,7 +1,7 @@
 Day 1: Setup + Syntax
 Learn
 -python
--vevu
+-vevu  (vitual environment)
 -IDE
 -basic syntax
 
