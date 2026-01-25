@@ -1,0 +1,4 @@
+pip install pytest
+pytest test_library.py -v
+pytest -v
+pytest
