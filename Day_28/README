@@ -1,0 +1,35 @@
+# 🚀 Python 28-Day Journey: From Zero to Pro
+
+ยินดีต้อนรับสู่คลังรวบรวมความรู้และการพัฒนาทักษะ Python ของผมตลอด 28 วันที่ผ่านมา
+
+## 📌 Summary of Learning
+
+### 🟢 Week 1: The Foundations (Logic & Basic CRUD)
+- **Concepts:** Variables, Loops, Conditionals, and Functions.
+- **Achievement:** สร้างระบบ CRUD พื้นฐานสำหรับเก็บข้อมูลนักเรียน (Day 5).
+
+### 🔵 Week 2: Algorithms & Data Structures
+- **Concepts:** Big-O Notation, Linear vs Binary Search, Recursion.
+- **Achievement:** พัฒนาประสิทธิภาพการค้นหาข้อมูลจาก $O(n)$ เป็น $O(\log n)$ (Day 11).
+
+### 🟡 Week 3: Advanced OOP & Architecture
+- **Concepts:** Inheritance, Composition, SOLID Principles, and Clean Code.
+- **Achievement:** Refactor ระบบห้องสมุดโดยใช้คลาสที่ยืดหยุ่นและอ่านง่ายตามหลักวิศวกรรมซอฟต์แวร์ (Day 21).
+
+### 🔴 Week 4: Professional Tooling & Quality Assurance
+- **Concepts:** Git Workflow, Unit Testing (pytest), Mock/Fixture, and Logging.
+- **Achievement:** สร้างระบบที่มีความน่าเชื่อถือสูงด้วย Code Coverage > 70% และระบบป้องกัน Bug (Day 26).
+
+---
+
+## 🛠 Tech Stack & Tools
+- **Language:** Python 3.x
+- **Testing:** Pytest, Coverage.py
+- **Version Control:** Git, GitHub Desktop
+- **Principles:** OOP, SOLID, DRY, Clean Code
+
+## 📈 Final Project: Smart Library System
+ระบบจัดการห้องสมุดที่รองรับการยืม-คืน, การตรวจสอบสถานะ, ระบบสมาชิก และมีการจดบันทึก Log ทุกการทำงาน พร้อมชุดทดสอบที่ครอบคลุม Edge Cases
+
+---
+*Developed with heart and logic by [Your Name]*
