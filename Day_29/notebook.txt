@@ -1,0 +1,20 @@
+🏗️ 1. Client / Server Model
+Client: คือผู้ร้องขอ (เปรียบเหมือน "ลูกค้า") เช่น เว็บเบราว์เซอร์ (Chrome, Safari) หรือแอปบนมือถือ
+
+Server: คือผู้ให้บริการ (เปรียบเหมือน "ร้านอาหาร") มีหน้าที่รอรับคำสั่ง ประมวลผล และส่งข้อมูลกลับไป
+
+🔒 2. HTTP vs HTTPS
+HTTP (HyperText Transfer Protocol): เป็นภาษาที่ใช้คุยกันระหว่าง Client และ Server แต่ข้อมูลจะส่งไปแบบข้อความดิบ (Plain Text) ซึ่งไม่ปลอดภัย
+
+HTTPS (HTTP Secure): เหมือน HTTP ทุกประการ แต่มีการ Encrypt (เข้ารหัส) ข้อมูลด้วย SSL/TLS ทำให้คนกลางไม่สามารถแอบอ่านข้อมูลได้ (เช่น รหัสผ่าน หรือเลขบัตรเครดิต)
+
+🔄 3. Request / Response Lifecycle
+เมื่อคุณพิมพ์ www.google.com แล้วกด Enter นี่คือสิ่งที่เกิดขึ้น:
+1 Request: Browser ส่ง "คำขอ" ไปยัง Server
+2 Processing: Server รับคำขอ, ตรวจสอบสิทธิ์, ดึงข้อมูลจาก Database
+3 Response: Server ส่งข้อมูลกลับมา (เช่น ไฟล์ HTML, รูปภาพ หรือ JSON)
+
+📊 รายละเอียดภายใน Request & Responseเพื่อให้คุณเห็นภาพว่า "ข้างในท่อ" เขาคุยอะไรกัน
+ส่วนประกอบRequest (จากเราไป)Response (จากเขามา)Method / StatusGET /index.html (ขอดูหน้าเว็บ)200 OK (ตกลง เอาไปเลย)
+Headersฉันใช้ Chrome, อยากได้ภาษาไทยนะข้อมูลนี้เป็น HTML, ขนาด 5KB นะ
+Body(มักจะว่างเปล่าใน GET หรือมี Password ใน POST)<html>...</html> (โค้ดหน้าเว็บ)
